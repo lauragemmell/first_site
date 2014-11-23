@@ -1,0 +1,36 @@
+#social-buttons button {
+  color: white;
+}
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+}
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+}
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+}
+#title-words{
+    text-align: center;
+    font-size: 102px;
+    color: white;
+        font-family: helvetica;
+  }
+  #title{
+    height: 600px;
+    background: url("http://learninglabs.org/wp-content/uploads/2013/05/IMG_5183.jpg");
+    background-size: cover;
+    padding-top: 70px;
+  }
+  #words{ 
+    text-align: center;
+    font-size: 42px;
+    color: white;
+        font-family: helvetica;
+  }
+  #pictures{
+    background-color: blue;
+  }

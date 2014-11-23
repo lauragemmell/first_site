@@ -26,7 +26,16 @@
 </head>
 <body>
   <img src="https://media.licdn.com/media/p/1/005/06b/124/3a05d2d.jpg">
-  <p>Hi! I'm Laura. A recent graduate. Say hello!</p>
+    <p>Hi! I'm Laura. A recent graduate. Say hello!</p>
   <input type="email" placeholder="Your email">
   <input type="submit">
+  <div id="some-div">
+    If you click me, I will disappear!
+  </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $("#some-div").on("click",function() {
+            $(this).hide("slow");
+      });
+    </script>
 </body>
