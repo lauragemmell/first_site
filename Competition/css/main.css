@@ -17,7 +17,7 @@
     text-align: center;
     font-size: 102px;
     color: white;
-        font-family: helvetica;
+    font-family: helvetica;
   }
   #title{
     height: 600px;
@@ -34,3 +34,9 @@
   #pictures{
     background-color: blue;
   }
+  #title-about{
+    font-size: 42px;
+    color: black;
+    font-family: helvetica;
+  }
+
