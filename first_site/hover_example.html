@@ -1,0 +1,34 @@
+<! DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <h1>jQuery Tutorial - Pop-up div on hover</h1>
+    <p>
+      To show hidden div, simply hover your mouse over
+      <a href="#" id="trigger">this link</a>.
+    </p>
+
+    <!-- HIDDEN / POP-UP DIV -->
+    <div id="pop-up">
+      <h3>Pop-up div Successfully Displayed</h3>
+      <p>
+        This div only appears when the trigger link is hovered over.
+        Otherwise it is hidden from view.
+      </p>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+  $(function() {
+  $('a#trigger').hover(function() {
+    $('div#pop-up').show();
+  }, function() {
+    $('div#pop-up').hide();
+  });
+});
+</script>
+</body>
+</html>

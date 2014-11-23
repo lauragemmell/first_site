@@ -1,41 +1,142 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
+<html>
+<link href='css/bootstrap.css' rel='stylesheet'>
 <head>
-  <title>Laura Gemmell</title>
-  <style>
-    body {
-      text-align: center;
-      background: url("http://www.ioha2015.org/wp-content/uploads/2012/02/London-Eye.jpg");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      font-family: helvetica;
-    }
-    p {
-      font-size: 22px;
-    }
-    input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
-  </style>
+	<link href='css/main.css' rel='stylesheet'>
+	<title>Startup</title>
+  <!-- jQuery library (served from Google) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")></script>
+  <!-- bxSlider Javascript file -->
+  
+  <!-- bxSlider CSS file -->
+  <link href="js/jquery.bxslider.css" rel="stylesheet" />
 </head>
+
 <body>
-  <img src="https://media.licdn.com/media/p/1/005/06b/124/3a05d2d.jpg">
-    <p>Hi! I'm Laura. A recent graduate. Say hello!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
-  <div id="some-div">
-    If you click me, I will disappear!
+	<div id="title">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      		<div class="container">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            			<span class="sr-only">Toggle navigation</span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+            			<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="#">Career Buddy</a>
+        		</div>
+        		<div id="navbar" class="collapse navbar-collapse">
+         			<ul class="nav navbar-nav">
+           				<li class="active"><a href="#">Home</a></li>
+            			<li><a href="#About Us">About Us</a></li>
+            			<li><a href="#Careers">Careers</a></li>
+            			<li><a href="#Courses">Courses</a></li>
+            			<li><a href="#Buddies">Buddies</a></li>
+            			<li><a href="#Mentors">Mentors</a></li>
+         			</ul>
+        		</div><!--/.nav-collapse -->
+      		</div>
+    	</nav>
+		<div id="title-words">
+			<p>Career Buddy</p>
+		</div>
+		<div class ='container'>
+			<div id="words">
+				<p> Want to learn to code? No idea where to start? </p>
+				<p> That's what we're here for!! </p>
+        <p>Sign up here, for we need for now is an email address!</p>
+			</div>
+      <div id="submit">
+        <input type="email" placeholder="Your email">
+        <input type="submit" class="email">
+      </div>
+		</div>
+	</div>
+
+	<div class='container' id="About Us">
+		<div id="subtitle">
+			<p> About Us </p>
+		</div>
+		<div id="words-about">
+			<p>Our mission is to ensure the next generation of women are happy, fuliflled, challenged and in the career of their dreams. </p>
+			<p>We hope to facilitate this by offering friendly advice and the tools and resources to do so.</p>
+			<p>This includes mentors, buddies, courses, skills building, careers how-to and anything else required to get to the top.</p>
+		</div>
+	</div>
+
+  <div class='container' id="Careers">
+    <div id="subtitle">
+      <p> Careers</p>
+    </div>   
+    <div>
+      <a href="#" id="trigger">Web Developer</a>.
+      <!-- HIDDEN / POP-UP DIV -->
+      <div id="pop-up">
+        <p>
+          Web developers design, build and maintain websites and website applications in line with their clients' needs.
+        </p>
+        <p>
+          Further Info
+        </p>
+      </div>
+    </div>
   </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+  $('a#trigger').hover(function() {
+    $('div#pop-up').show();
+  }, function() {
+    $('div#pop-up').hide();
+  });
+  });
+  </script>
+
+	<div class='container' id="Courses">
+    <div id="subtitle">
+      <p> Courses </p>
+    </div>
+     	<div>
+      <ul class="bxslider">
+        <li><img src="http://www.codefirstgirls.org.uk/uploads/1/9/8/9/19897181/1404924530.png" /></li>
+        <li><img src="http://cdn-production.codecademy.com/assets/logo/logo--dark-blue-bf11002ce1caecdfb9fec8d3286b8a8d.svg" /></li>
+        <li><img src="https://ga-core-production-herokuapp-com.global.ssl.fastly.net/assets/ga-lockup-61c4920d0981703871ab3256bc786a2f.png" /></li>
+      </ul>
+    </div>
+    <script src="js/jquery.bxslider.min.js"></script>
     <script type="text/javascript">
-      $("#some-div").on("click",function() {
-            $(this).hide("slow");
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true
       });
-    </script>
+    }); 
+   </script>
+ </div>
+
+    <div class='container' id="Buddies">
+      <div id="subtitle">
+        <p> Buddies </p>
+      </div>
+    </div>
+
+    <div class='container' id="Mentors">
+      <div id="subtitle">
+        <p> Mentors </p>
+      </div>
+    </div>
+
+    
+
+	<div id='social-buttons'>
+        <button class='btn btn-twitter btn-lg'>Twitter</button>
+        <button class='btn btn-facebook btn-lg'>Facebook</button>
+        <button class='btn btn-pinterest btn-lg'>Pinterest</button>
+     </div>
+	
+	
 </body>
+</html>
