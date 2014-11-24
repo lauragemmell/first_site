@@ -41,9 +41,6 @@
     background-color: red;
     color: white;
   }
-  #Courses{
-    
-  }
   #subtitle{
     font-size: 42px;
     color: black;
@@ -52,3 +49,6 @@
   #pop-up{
     display: none;
   }
+  body { padding-top: 70px; }
+#Courses { padding-top: 70px;}
+#About-Us { padding-top: 70px;}
